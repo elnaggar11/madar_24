@@ -1,0 +1,55 @@
+
+
+
+      fluttergen -c pubspec.yaml; flutter pub run easy_localization:generate -S assets/translations -f keys -O lib/gen -o locale_keys.g.dart
+
+      
+      flutter pub cache clean
+      fluttergen -c pubspec.yaml 
+
+
+      ./gradlew signingReport
+
+      git config --global user.email ao25332@gmail.com ; git config --global user.name Abdallah Kddah
+      git add .;
+      git commit -m "merge"
+      ;git push;
+      fvm flutter clean
+
+      fvm flutter clean;fvm flutter pub get;fvm flutter build apk --release
+
+      git push origin stg:main
+
+      git reset --hard commit_hash_you_want_to_return_to
+
+      git checkout stg;git merge main;git push;fvm flutter clean ;fvm flutter pub get ;fvm flutter build apk;git checkout main
+
+
+      git add .;
+      git commit -m "fix colors"
+      ;git push;git checkout main;git merge dev;git push;git checkout dev
+
+      app links:
+                                                                                                                                
+git init;
+git add README.md;
+git commit -m "first commit";
+git branch -M main;
+git remote add origin https://Abdallah_kddah@bitbucket.org/octopiicloud/marketplace-app.git;
+git push -u origin main;
+
+
+git stash 
+
+git stash pop
+
+
+keytool -exportcert -alias upload -keystore /Users/abdallah/work/jinni/octpii_market_place/android/app/octopii-customer-keystore.jks -storepass cbwbpqzmqf | openssl sha1 -binary | openssl base64
+
+
+git init;
+git add .;
+git commit -m "first commit";
+git push
+
+
