@@ -93,11 +93,9 @@ class _AppFieldState extends State<AppField> {
           10.verticalSpace,
         ],
         Directionality(
-          textDirection:
-              widget.keyboardType == TextInputType.phone ||
-                  context.locale.languageCode == 'en'
-              ? TextDirection.ltr
-              : TextDirection.rtl,
+          textDirection: context.locale.languageCode == 'ar'
+              ? TextDirection.rtl
+              : TextDirection.ltr,
           child: TextFormField(
             focusNode: _focusNode,
 

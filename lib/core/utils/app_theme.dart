@@ -4,7 +4,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../gen/fonts.gen.dart';
 
 class AppThemes {
-  static const Color _primaryColor = Color(0xff007AFF);
+  static const Color _primaryColor = Color(0xff007760);
   static const Color _secondaryColor = Color(0xffF48231);
   static const Color _backgroundColor = Color(0xffFFFFFF);
   static const Color _surfaceColor = Color(0xff2B3990);
@@ -13,7 +13,7 @@ class AppThemes {
   static const Color _borderColor = Color(0xffE5E5E5);
   static const Color _errorColor = Color(0xffEC362A);
   static const Color _primaryContainer = Color(0xffF5F5F6);
-  static const int borderRadius = 24;
+  static const int borderRadius = 12;
 
   static ThemeData get lightTheme => ThemeData(
     primaryColor: _primaryColor,
@@ -120,7 +120,7 @@ class AppThemes {
         borderSide: BorderSide(color: _borderColor),
         borderRadius: BorderRadius.circular(borderRadius.r),
       ),
-      contentPadding: EdgeInsets.symmetric(vertical: 16.h, horizontal: 16.w),
+      contentPadding: EdgeInsets.symmetric(vertical: 17.h, horizontal: 17.w),
     ),
     // navigationBarTheme: NavigationBarThemeData(
     //   backgroundColor: _primaryLightColor,

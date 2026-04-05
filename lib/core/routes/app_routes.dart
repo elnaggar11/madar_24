@@ -1,4 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:madar_24/features/auth/forget_password/view/confirm_identity.dart';
+import 'package:madar_24/features/auth/forget_password/view/reset_password.dart';
+import 'package:madar_24/features/auth/login/view/login_view.dart';
+import 'package:madar_24/features/auth/sign_up/view/sign_up_view.dart';
+import 'package:madar_24/features/auth/verify/view/view.dart';
 import 'package:madar_24/features/splash/view/splash_view.dart';
 
 import 'routes.dart';
@@ -11,17 +16,10 @@ class AppRoutes {
 
   Map<String, Widget Function(BuildContext)> appRoutes = {
     NamedRoutes.splash: (c) => const SplashView(),
-    // NamedRoutes.onBoarding: (c) => const OnBoardingView(),
-    // NamedRoutes.login: (c) => const LoginView(),
-    // NamedRoutes.forgotPassword: (c) => const ForgetPasswordView(),
-    // NamedRoutes.resetPassword: (c) => const ResetPasswordView(),
-    // NamedRoutes.register: (c) => const RegisterView(),
-    // NamedRoutes.verifyPhone: (c) => VerifyPhoneView(),
-    // // NamedRoutes.resetPassword: (c) => ResetPasswordView(phone: c.arg['phone'], otp: c.arg['otp']),
-    // NamedRoutes.createService: (c) => const CreateServiceView(),
-    // NamedRoutes.layout: (c) => const LayoutView(),
-    // NamedRoutes.editProfile: (c) => const EditProfileView(),
-    // NamedRoutes.appPages: (c) =>
-    //     AppPageView(type: (c.arg['type'] as AppPageType?) ?? AppPageType.about),
+    NamedRoutes.confirmIdentity: (c) => const ConfirmIdentityView(),
+    NamedRoutes.login: (c) => const LoginView(),
+    NamedRoutes.resetPassword: (c) => const ResetPasswordView(),
+    NamedRoutes.register: (c) => const SignUpView(),
+    NamedRoutes.verify: (c) => VerifyView(),
   };
 }

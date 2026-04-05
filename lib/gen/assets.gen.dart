@@ -14,6 +14,9 @@ import 'package:flutter/widgets.dart';
 class $AssetsIconsGen {
   const $AssetsIconsGen();
 
+  /// File path: assets/icons/arrow_left.svg
+  String get arrowLeft => 'assets/icons/arrow_left.svg';
+
   /// File path: assets/icons/chas_method.svg
   String get chasMethod => 'assets/icons/chas_method.svg';
 
@@ -29,8 +32,27 @@ class $AssetsIconsGen {
   /// File path: assets/icons/logo.svg
   String get logo => 'assets/icons/logo.svg';
 
+  /// File path: assets/icons/pick_image.svg
+  String get pickImage => 'assets/icons/pick_image.svg';
+
+  /// File path: assets/icons/saudi_arabia_flag.svg
+  String get saudiArabiaFlag => 'assets/icons/saudi_arabia_flag.svg';
+
+  /// File path: assets/icons/splash_logo.svg
+  String get splashLogo => 'assets/icons/splash_logo.svg';
+
   /// List of all assets
-  List<String> get values => [chasMethod, closeCircle, eyeSlash, eye, logo];
+  List<String> get values => [
+    arrowLeft,
+    chasMethod,
+    closeCircle,
+    eyeSlash,
+    eye,
+    logo,
+    pickImage,
+    saudiArabiaFlag,
+    splashLogo,
+  ];
 }
 
 class $AssetsImagesGen {

@@ -9,7 +9,12 @@ class CustomPinCode extends StatelessWidget {
   final TextEditingController? controller;
   final void Function(String)? onCompleted;
   final int length;
-  const CustomPinCode({super.key, this.controller, this.onCompleted, this.length = 6});
+  const CustomPinCode({
+    super.key,
+    this.controller,
+    this.onCompleted,
+    this.length = 6,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -24,7 +29,10 @@ class CustomPinCode extends StatelessWidget {
         hintCharacter: '-',
         controller: controller,
         obscureText: false,
-        textStyle: context.mediumText.copyWith(fontSize: 13, color: context.primaryColor),
+        textStyle: context.mediumText.copyWith(
+          fontSize: 24.sp,
+          color: Colors.black,
+        ),
         inputFormatters: [FilteringTextInputFormatter.digitsOnly],
         hintStyle: TextStyle(color: context.hintColor),
         animationType: AnimationType.fade,
@@ -40,8 +48,8 @@ class CustomPinCode extends StatelessWidget {
           shape: PinCodeFieldShape.box,
           borderRadius: BorderRadius.circular(20.r),
 
-          fieldHeight: (context.w - 65.w) / length,
-          fieldWidth: (context.w - 65.w) / length,
+          fieldHeight: (context.w - 120.w) / length,
+          fieldWidth: (context.w - 120.w) / length,
         ),
         cursorColor: Colors.black,
         backgroundColor: Colors.transparent,

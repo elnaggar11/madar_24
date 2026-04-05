@@ -13,4 +13,15 @@ enum RequestState {
   bool get isInitial => this == RequestState.initial;
 }
 
-enum ErrorType { network, server, backEndValidation, empty, unknown, none, cancel, unAuth }
+enum ErrorType {
+  network,
+  server,
+  backEndValidation,
+  empty,
+  unknown,
+  none,
+  cancel,
+  unAuth,
+}
+
+enum UserType { user, guest }

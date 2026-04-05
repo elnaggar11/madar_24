@@ -94,6 +94,11 @@ extension ExtensionContext on BuildContext {
   double get availableHeight => MediaQuery.of(this).viewInsets.bottom;
 }
 
+extension Space on num {
+  SizedBox get hSpace => SizedBox(height: toDouble());
+  SizedBox get wSpace => SizedBox(width: toDouble());
+}
+
 extension StringContext on String {
   bool get isArabic {
     final arabicRegex = RegExp(r'[\u0600-\u06FF\u0750-\u077F\u08A0-\u08FF]');

@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:madar_24/core/utils/extensions.dart';
 
 class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   final String? title;
   final Widget? titleWidget;
+  final bool centerTitle;
   final bool withLeading;
+  final Widget? leading;
   final List<Widget>? actions;
   final void Function()? onBack;
   final PreferredSizeWidget? bottom;
@@ -12,7 +15,9 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   const CustomAppBar({
     super.key,
     this.title,
+    this.centerTitle = false,
     this.withLeading = true,
+    this.leading,
     this.actions,
     this.onBack,
     this.titleWidget,
@@ -25,29 +30,30 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
     return AppBar(
       backgroundColor: backgroundColor ?? context.primaryColorLight,
       title: title != null
-          ? Text(title!, style: context.mediumText.copyWith(fontSize: 16))
+          ? Text(title!, style: context.boldText.copyWith(fontSize: 16.sp))
           : titleWidget,
-      centerTitle: false,
-      // leadingWidth: withLeading ? 60.w : null,
+      centerTitle: centerTitle,
       automaticallyImplyLeading: false,
       bottom: bottom,
-      leading: (() {
-        if (withLeading) {
-          return IconButton(
-            onPressed: () {
-              if (onBack != null) {
-                onBack!();
-              } else {
-                Navigator.pop(context);
-              }
-            },
-            icon: Icon(
-              Icons.keyboard_backspace_sharp,
-              color: context.textPrimaryColor,
-            ),
-          );
-        }
-      })(),
+      leading:
+          leading ??
+          (() {
+            if (withLeading) {
+              return IconButton(
+                onPressed: () {
+                  if (onBack != null) {
+                    onBack!();
+                  } else {
+                    Navigator.pop(context);
+                  }
+                },
+                icon: Icon(
+                  Icons.keyboard_backspace_sharp,
+                  color: context.textPrimaryColor,
+                ),
+              );
+            }
+          })(),
       actions: actions,
     );
   }

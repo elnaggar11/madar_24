@@ -4,7 +4,7 @@ class NamedRoutes {
   static const layout = "/layout";
   static const onBoarding = "/onBoarding";
   static const forgotPassword = "/forgotPassword";
-  static const verifyPhone = "/verifyPhone";
+  static const verify = "/verify";
   static const resetPassword = "/resetPassword";
   static const register = "/register";
   static const editProfile = "/editProfile";
@@ -38,4 +38,6 @@ class NamedRoutes {
   static const addresses = "addresses";
   static const pickLocation = "/pickLocation";
   static const createService = "/createService";
+
+  static const confirmIdentity = "/confirmIdentity";
 }
