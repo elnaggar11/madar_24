@@ -4,13 +4,14 @@ import 'package:madar_24/features/auth/forget_password/view/reset_password.dart'
 import 'package:madar_24/features/auth/login/view/login_view.dart';
 import 'package:madar_24/features/auth/sign_up/view/sign_up_view.dart';
 import 'package:madar_24/features/auth/verify/view/view.dart';
+import 'package:madar_24/features/layout/view/view.dart';
 import 'package:madar_24/features/splash/view/splash_view.dart';
 
 import 'routes.dart';
 
 class AppRoutes {
   static AppRoutes get init => AppRoutes._internal();
-  String initial = NamedRoutes.splash;
+  String initial = NamedRoutes.layout;
 
   AppRoutes._internal();
 
@@ -21,5 +22,6 @@ class AppRoutes {
     NamedRoutes.resetPassword: (c) => const ResetPasswordView(),
     NamedRoutes.register: (c) => const SignUpView(),
     NamedRoutes.verify: (c) => VerifyView(),
+    NamedRoutes.layout: (c) => const LayoutView(),
   };
 }

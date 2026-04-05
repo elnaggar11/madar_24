@@ -17,6 +17,9 @@ class $AssetsIconsGen {
   /// File path: assets/icons/arrow_left.svg
   String get arrowLeft => 'assets/icons/arrow_left.svg';
 
+  /// File path: assets/icons/cart.svg
+  String get cart => 'assets/icons/cart.svg';
+
   /// File path: assets/icons/chas_method.svg
   String get chasMethod => 'assets/icons/chas_method.svg';
 
@@ -29,14 +32,35 @@ class $AssetsIconsGen {
   /// File path: assets/icons/eye.svg
   String get eye => 'assets/icons/eye.svg';
 
+  /// File path: assets/icons/home.svg
+  String get home => 'assets/icons/home.svg';
+
   /// File path: assets/icons/logo.svg
   String get logo => 'assets/icons/logo.svg';
+
+  /// File path: assets/icons/orders.svg
+  String get orders => 'assets/icons/orders.svg';
 
   /// File path: assets/icons/pick_image.svg
   String get pickImage => 'assets/icons/pick_image.svg';
 
+  /// File path: assets/icons/profile.svg
+  String get profile => 'assets/icons/profile.svg';
+
   /// File path: assets/icons/saudi_arabia_flag.svg
   String get saudiArabiaFlag => 'assets/icons/saudi_arabia_flag.svg';
+
+  /// File path: assets/icons/selected_cart.svg
+  String get selectedCart => 'assets/icons/selected_cart.svg';
+
+  /// File path: assets/icons/selected_home.svg
+  String get selectedHome => 'assets/icons/selected_home.svg';
+
+  /// File path: assets/icons/selected_orders.svg
+  String get selectedOrders => 'assets/icons/selected_orders.svg';
+
+  /// File path: assets/icons/selected_profile.svg
+  String get selectedProfile => 'assets/icons/selected_profile.svg';
 
   /// File path: assets/icons/splash_logo.svg
   String get splashLogo => 'assets/icons/splash_logo.svg';
@@ -44,13 +68,21 @@ class $AssetsIconsGen {
   /// List of all assets
   List<String> get values => [
     arrowLeft,
+    cart,
     chasMethod,
     closeCircle,
     eyeSlash,
     eye,
+    home,
     logo,
+    orders,
     pickImage,
+    profile,
     saudiArabiaFlag,
+    selectedCart,
+    selectedHome,
+    selectedOrders,
+    selectedProfile,
     splashLogo,
   ];
 }
