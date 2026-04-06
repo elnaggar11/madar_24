@@ -14,11 +14,20 @@ import 'package:flutter/widgets.dart';
 class $AssetsIconsGen {
   const $AssetsIconsGen();
 
+  /// File path: assets/icons/arrow_down.svg
+  String get arrowDown => 'assets/icons/arrow_down.svg';
+
   /// File path: assets/icons/arrow_left.svg
   String get arrowLeft => 'assets/icons/arrow_left.svg';
 
   /// File path: assets/icons/cart.svg
   String get cart => 'assets/icons/cart.svg';
+
+  /// File path: assets/icons/category.svg
+  String get category => 'assets/icons/category.svg';
+
+  /// File path: assets/icons/category1.svg
+  String get category1 => 'assets/icons/category1.svg';
 
   /// File path: assets/icons/chas_method.svg
   String get chasMethod => 'assets/icons/chas_method.svg';
@@ -32,11 +41,20 @@ class $AssetsIconsGen {
   /// File path: assets/icons/eye.svg
   String get eye => 'assets/icons/eye.svg';
 
+  /// File path: assets/icons/heart.svg
+  String get heart => 'assets/icons/heart.svg';
+
   /// File path: assets/icons/home.svg
   String get home => 'assets/icons/home.svg';
 
+  /// File path: assets/icons/location.svg
+  String get location => 'assets/icons/location.svg';
+
   /// File path: assets/icons/logo.svg
   String get logo => 'assets/icons/logo.svg';
+
+  /// File path: assets/icons/notification_bing.svg
+  String get notificationBing => 'assets/icons/notification_bing.svg';
 
   /// File path: assets/icons/orders.svg
   String get orders => 'assets/icons/orders.svg';
@@ -47,8 +65,14 @@ class $AssetsIconsGen {
   /// File path: assets/icons/profile.svg
   String get profile => 'assets/icons/profile.svg';
 
+  /// File path: assets/icons/sar_coin.svg
+  String get sarCoin => 'assets/icons/sar_coin.svg';
+
   /// File path: assets/icons/saudi_arabia_flag.svg
   String get saudiArabiaFlag => 'assets/icons/saudi_arabia_flag.svg';
+
+  /// File path: assets/icons/search.svg
+  String get search => 'assets/icons/search.svg';
 
   /// File path: assets/icons/selected_cart.svg
   String get selectedCart => 'assets/icons/selected_cart.svg';
@@ -65,33 +89,60 @@ class $AssetsIconsGen {
   /// File path: assets/icons/splash_logo.svg
   String get splashLogo => 'assets/icons/splash_logo.svg';
 
+  /// File path: assets/icons/star.svg
+  String get star => 'assets/icons/star.svg';
+
   /// List of all assets
   List<String> get values => [
+    arrowDown,
     arrowLeft,
     cart,
+    category,
+    category1,
     chasMethod,
     closeCircle,
     eyeSlash,
     eye,
+    heart,
     home,
+    location,
     logo,
+    notificationBing,
     orders,
     pickImage,
     profile,
+    sarCoin,
     saudiArabiaFlag,
+    search,
     selectedCart,
     selectedHome,
     selectedOrders,
     selectedProfile,
     splashLogo,
+    star,
   ];
 }
 
 class $AssetsImagesGen {
   const $AssetsImagesGen();
 
+  /// File path: assets/images/Discount Card.png
+  AssetGenImage get discountCard =>
+      const AssetGenImage('assets/images/Discount Card.png');
+
+  /// File path: assets/images/category.png
+  AssetGenImage get category =>
+      const AssetGenImage('assets/images/category.png');
+
+  /// File path: assets/images/category1.jpg
+  AssetGenImage get category1 =>
+      const AssetGenImage('assets/images/category1.jpg');
+
   /// File path: assets/images/empity.png
   AssetGenImage get empity => const AssetGenImage('assets/images/empity.png');
+
+  /// File path: assets/images/market.png
+  AssetGenImage get market => const AssetGenImage('assets/images/market.png');
 
   /// File path: assets/images/succ.gif
   AssetGenImage get succ => const AssetGenImage('assets/images/succ.gif');
@@ -100,7 +151,15 @@ class $AssetsImagesGen {
   AssetGenImage get visa => const AssetGenImage('assets/images/visa.png');
 
   /// List of all assets
-  List<AssetGenImage> get values => [empity, succ, visa];
+  List<AssetGenImage> get values => [
+    discountCard,
+    category,
+    category1,
+    empity,
+    market,
+    succ,
+    visa,
+  ];
 }
 
 class $AssetsTranslationsGen {

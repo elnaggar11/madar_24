@@ -34,6 +34,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
           : titleWidget,
       centerTitle: centerTitle,
       automaticallyImplyLeading: false,
+      leadingWidth: MediaQuery.of(context).size.width - 132.w,
       bottom: bottom,
       leading:
           leading ??

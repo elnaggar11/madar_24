@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:madar_24/features/cart/view/view.dart';
-import 'package:madar_24/features/home/view/view.dart';
+import 'package:madar_24/features/home/view/home_view.dart';
 import 'package:madar_24/features/layout/cubit/layout_cubit.dart';
 import 'package:madar_24/features/layout/cubit/layout_state.dart';
 import 'package:madar_24/features/layout/widgets/custom_nav_bar.dart';

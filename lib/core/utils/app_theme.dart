@@ -13,6 +13,20 @@ class AppThemes {
   static const Color _borderColor = Color(0xffE5E5E5);
   static const Color _errorColor = Color(0xffEC362A);
   static const Color _primaryContainer = Color(0xffF5F5F6);
+  static const Color _secondaryContainer = Color(0xffF7F7F7);
+
+  static LinearGradient gradient = LinearGradient(
+    begin: AlignmentDirectional.topEnd,
+    end: AlignmentDirectional.bottomStart,
+
+    colors: [Color(0xffFFFFFF), Color(0xff007760).withValues(alpha: 0.3)],
+    stops: [0.1, 0.7],
+  );
+  static LinearGradient offerGradient = LinearGradient(
+    begin: AlignmentDirectional.topCenter,
+    end: AlignmentDirectional.bottomCenter,
+    colors: [Color(0xffFFF4D0), Color(0xffF1FFF1)],
+  );
   static const int borderRadius = 12;
 
   static ThemeData get lightTheme => ThemeData(
@@ -50,6 +64,7 @@ class AppThemes {
       surface: _surfaceColor,
       onSurface: _backgroundColor,
       primaryContainer: _primaryContainer,
+      secondaryContainer: _secondaryContainer,
     ),
     radioTheme: RadioThemeData(
       fillColor: WidgetStateProperty.resolveWith<Color>((states) {

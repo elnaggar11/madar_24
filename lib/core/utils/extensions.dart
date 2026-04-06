@@ -40,6 +40,8 @@ extension ExtensionContext on BuildContext {
 
   Color get primaryContainer => Theme.of(this).colorScheme.primaryContainer;
 
+  Color get secondaryContainer => Theme.of(this).colorScheme.secondaryContainer;
+
   Color get textPrimaryColor => Theme.of(this).primaryColorDark;
 
   Color get textSecondaryColor => Theme.of(this).hintColor;
